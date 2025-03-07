@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body{
     height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .body{
@@ -88,7 +89,7 @@ svg path{
     p{
         font-size: 20px;
         padding-top: 5px;
-        font-family: 'Courier New', Courier, monospace;
+        
         font-weight: bold;
     }
 }
@@ -125,17 +126,37 @@ svg path{
     position: relative;
     display: grid;
     grid-template-rows: calc(0.4*var(--headerHeight)) 1fr;
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 1fr 300px;
 }
 
 .searchDiv{
-    background-color:saddlebrown;
-
+    display: flex;
+    align-items: center;
+    gap:10px;
+    svg{
+        height:80%;
+        margin-left: 10px;
+        flex:0 0 auto;
+    } 
+    input{
+        height: 50%;
+        border-radius: 100px;
+        flex: 0 1 70%;
+        outline: none;
+        border: none;
+        padding-left: 20px;
+        background-color: var(--color4);
+    };
+    input:hover{
+        outline: none;
+        border: none;;
+    }
+    border: 1px solid white;;
 }
 .smallLogo{
-    background-color: #fff;
+    border: 1px solid white;;
 }
 .lower{
-    background-color: red;
     grid-column: span 2;
+    border: 1px solid white;;
 }
