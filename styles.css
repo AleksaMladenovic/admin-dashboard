@@ -54,7 +54,7 @@ h6 {
   --color3: rgb(0, 173, 181);
   --color4: rgb(238, 238, 238);
   --sidebarWidth: 300px;
-  --headerHeight: 150px;
+  --headerHeight: 160px;
 }
 
 body {
@@ -155,8 +155,10 @@ svg path {
   display: flex;
   align-items: center;
   gap: 20px;
+  padding-left: 16vw;
+  /* loupe */
   svg {
-    height: 80%;
+    height: 50%;
     margin-left: 10px;
     flex: 0 0 auto;
   }
@@ -258,4 +260,21 @@ svg path {
         font-size: 20px;
     }
   }
+}
+
+
+.container{
+
+
+    .projects{
+
+    }
+
+    .announcements{
+
+    }
+
+    .trending{
+
+    }
 }
