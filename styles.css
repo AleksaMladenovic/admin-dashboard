@@ -41,7 +41,7 @@ body{
 
 .body{
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 300px 1fr;
     grid-template-rows: 150px 1fr;
     height: 100%;
 }
@@ -61,7 +61,59 @@ svg path{
     stroke: var(--color4);
     fill: var(--color4);
 }
-svg{
-    height:40px;
-    width: auto;
+
+.element p{
+    color:var(--color4);
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.element{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    svg{
+        height: 50px;
+    }
+    p{
+        font-size: 20px;
+        padding-top: 5px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+}
+.title>.element{
+    padding-left: 0;
+    svg{
+        height: 60px;
+    }
+    p{
+        font-size: 24px;
+    }
+}
+
+.element:hover{
+    svg{
+        height: 54px;
+    }
+    p{
+        font-size: 22px;
+    }
+}
+
+.title>.element:hover{
+    svg{
+        height: 64px;
+    }
+    p{
+        font-size: 26px;
+    }
 }
