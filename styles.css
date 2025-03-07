@@ -126,7 +126,7 @@ svg path{
     position: relative;
     display: grid;
     grid-template-rows: calc(0.4*var(--headerHeight)) 1fr;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 1fr 250px;
 }
 
 .searchDiv{
@@ -154,9 +154,27 @@ svg path{
     border: 1px solid white;;
 }
 .smallLogo{
-    border: 1px solid white;;
+    border: 1px solid white;
+    display: flex;
+    gap:15px;
+    align-items: center;
+    justify-content: right;
+    padding-right: 20px;
+    color:var(--color4);
+    .imgWrapper{
+        height: 100%;
+        background-color: var(--color3);
+        border-radius: 100px;
+    }
+    svg{
+        height: 50%;
+    }
+}
+img{
+    width: 100%;
+    height: 100%;
 }
 .lower{
     grid-column: span 2;
-    border: 1px solid white;;
+    border: 1px solid white;
 }
