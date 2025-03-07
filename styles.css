@@ -1,0 +1,58 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+#root, #__next {
+  isolation: isolate;
+}
+:root{
+    --color1: rgb(34, 40, 49);
+    --color2: rgb(57, 62, 70);
+    --color3: rgb(0, 173, 181);
+    --color4: rgb(238, 238, 238);
+}
+
+
+body{
+    height: 100vh;
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 150px 1fr;
+    height: 100%;
+}
+
+.sidebar{
+    grid-row:span 2;
+    background-color: var(--color1);
+}
+.header{
+    background-color: var(--color2);
+}
+.container{
+    background-color: var(--color3);
+}
